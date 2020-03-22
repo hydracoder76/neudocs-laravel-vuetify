@@ -1,0 +1,22 @@
+.neu-util-uppercase {
+  text-transform: uppercase;
+}
+
+.neu-util-lowercase {
+  text-transform: lowercase;
+}
+
+.neu-bump-d-sm {
+  width: 100%;
+  display: block;
+  height: 10px;
+}
+
+.neu-bump-d-md {
+  @extend .neu-bump-d-sm;
+  height: 25px;
+}
+
+.neu-black-shadow {
+  @include make-modal-shadow(rgb(0,0,0), 0.20);
+}

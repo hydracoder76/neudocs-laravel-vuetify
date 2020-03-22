@@ -1,0 +1,1 @@
+<burger-menu :options='@json($adminChildren)'></burger-menu>

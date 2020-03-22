@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Upload",
+  "description": "File to be uploaded to the SRM system. Passed as a parameter fo a formdata object",
+  "type": "array",
+  "properties": {
+	"file_name": {
+	  "description": "The name of the file without extension. Will be normalized on the server if needed",
+	  "type": "string"
+	},
+	"file_ext": {
+	  "type": "string",
+	  "description": "The actual file extension to be used later for construction of the file"
+	},
+
+	"file_mime": {
+	  "type": "string",
+	  "description": "Proper mime type of the file, may be guessed by the server if need be"
+	},
+	"file_size": {
+	  "type": "integer",
+	  "description": "size in bytes, gives the server a heads up"
+	},
+	"user_id": {
+	  "type": "string",
+	  "description": "ID of the user uploading the file, hopefully that's obvious"
+	},
+	"time_of_upload": {
+	  "type": "integer",
+	  "description": "unix timestamp of the upload time, can be used for debugging later"
+	},
+	"locale_of_upload": {
+	  "type": "string",
+	  "description": "locale to apply to the timestamp",
+	  "minLength": 5,
+	  "maxLength": 5
+	},
+	"upload_type" : {
+	  "type": "string",
+	  "description": "Used to determine what upload type to put in the database",
+	  "enum": ["DIRECT", "SCAN"]
+	},
+	"box_name": {
+	  "type": "string"
+	},
+	"part_id": {
+	  "type": "string",
+	  "minLength": 36,
+	  "maxLength": 60
+	},
+	"project_id": {
+	  "type": "string"
+	}
+  },
+  "required": ["file_name", "file_size", "file_ext", "upload_type", "project_id"]
+}

@@ -1,0 +1,249 @@
+#neu-header {
+  position: fixed;
+  display: inline-block;
+  height: $neu-header-height;
+  min-height: $neu-header-height;
+  color: $neu-header-color;
+  z-index: 1;
+  background-color: $neu-header-bg-color;
+  padding: 0px 100px;
+  width: 100%;
+
+  .neu-header-title {
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  a, a:visited, .neu-header-text {
+    color: $neu-header-link-color;
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 5px;
+  }
+   
+  #neu-header-actions {
+
+    position: absolute;
+    top: 15px;
+    right:0;
+
+  }
+}
+
+
+.neu-sidebar-left, .neu-sidebar-right {
+
+}
+
+
+.neu-default-body {
+  min-height: calc(100vh - 60px);
+  height: 100%;
+  border: none;
+  padding: 70px 0 0;
+  background: transparent;
+  color: $neu-body-color;
+  font-size: $neu-body-font-size;
+  a {
+    color: $neu-body-link-color;
+  }
+}
+
+
+#neu-footer {
+  color: $neu-body-color;
+  bottom: 0;
+  height: $neu-footer-height;
+  min-height: $neu-footer-height;
+  width: 100%;
+  padding: 10px 100px;
+  &.neu-footer-text{
+    p{
+      font-size: 0.825rem;
+      line-height: 1rem;
+      margin-bottom: 0;
+    }
+
+}
+  .neu-footer-links {
+    position: absolute;
+    right: 100px;
+
+    a, a:visited {
+      color: $neu-footer-link-color;
+      text-decoration: none;
+      font-size: 1.25rem;
+      margin: 5px;
+    }
+  }
+}
+  .panel-heading{
+    font-size: 1.5rem;
+    @extend .pb-5;    // add some padding from bottom 
+	} 
+h1 {
+  display: inline-block;
+}
+
+.neu-logo {
+  margin: 5px 0 5px 0;
+  width: 50px;
+  height: 50px;
+  padding-right: 0;
+  display: inline-block;
+
+}
+
+.neu-logo-label {
+
+  padding-top: 7px;
+  padding-left: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7rem;
+  width: auto;
+
+}
+
+.neu-container {
+  @extend .container;
+  @extend .col-12;
+}
+
+.neu-row {
+  @extend .row;
+  // this is for extensions to the native bootstrap row
+}
+
+.neu-table-action-row {
+  @extend .border;
+  float: left;
+  width: 100%;
+    // this is for extensions to the native bootstrap border, d-flex, justify-content classes
+}
+.neu-width-100 {
+  @extend .w-100;
+  padding: 15px;
+  background-color: $neu-white;
+    // this is for extensions to the native bootstrap w-100 class 
+}
+.neu-footnote {
+  color: $neu-grey-text;
+  font-size: 0.9rem;
+}
+
+.neu-text-black {
+  color: $neu-black-text !important;
+
+}
+
+.neu-text-white {
+  color: $neu-white-text !important;
+}
+
+.neu-text-red {
+  color: $neu-red-text !important;
+}
+
+#page-wrap {
+  min-height:100%;
+  padding: 1.3rem
+}
+
+.neu-login-container{
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 7px;
+  height: auto;
+  background-color: $neu-white;
+  -webkit-box-shadow: 3px 3px 2px rgba(74, 74, 74, 0.37);
+  box-shadow: 0px 1px 11px 0px rgba(74, 74, 74, 0.37);
+}
+
+.neu-left-container{
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 7px;
+  height: 300px;
+  background-color: $neu-white;
+  -webkit-box-shadow: 3px 3px 2px rgba(74, 74, 74, 0.37);
+  box-shadow: 0px 1px 11px 0px rgba(74, 74, 74, 0.37);
+}
+
+.neu-right-container{
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 7px;
+  height: 300px;
+  background-color: $neu-white;
+  -webkit-box-shadow: 3px 3px 2px rgba(74, 74, 74, 0.37);
+  box-shadow: 0px 1px 11px 0px rgba(74, 74, 74, 0.37);
+}
+
+
+.neu-log-row {
+  span.neu-log-row-key {
+    text-transform: capitalize;
+  }
+}
+
+.neu-mfa-form {
+  margin: auto;
+  padding: 20px;
+  border-radius: 7px;
+  height: auto;
+  min-width:300px;
+  -webkit-box-shadow: 3px 3px 2px rgba(74, 74, 74, 0.37);
+  box-shadow: 0px 1px 11px 0px rgba(74, 74, 74, 0.37);
+}
+
+.neu-requestDiv-search{
+   @extend .border;
+   margin-top: 0.6rem;
+   padding: 0;
+   .neu-requestDiv-label {
+     padding: 10px;
+     font-size: 0.9rem;
+     font-weight: 600;
+     margin-top: 5px;
+   }
+  .neu-search-field{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .nue-requestDiv-content{
+      @extend .border-top;
+      max-height: calc(100vh - 400px);
+      overflow: auto;
+      padding:10px;
+      overflow-x: hidden;
+    }
+    .neu-requestDiv-fields {
+      max-height: 400px;
+      overflow-y: auto;
+      overflow-x: hidden;
+ }
+  }
+
+  .neu-search-field{
+    position: relative;
+    .neu-clear-search-icon{
+      position: absolute;
+      right: 10px;
+      z-index: 4;
+      top: 7px;
+      cursor: pointer;
+  }
+  }
+
+.neu-alert {
+  width: 100%;
+  display: inline-block;
+  z-index: 999;
+}

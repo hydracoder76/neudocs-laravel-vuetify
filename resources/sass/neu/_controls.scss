@@ -1,0 +1,127 @@
+button {
+  // as opposed to confirm or cancel
+  // not using cancel because i want to make sure this is as dynamic as possible
+  &[type=button] {
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    &.neu-confirm-button {
+      background-color: $neu-confirm-btn-bg;
+      color: $neu-confirm-btn-color;
+      border: none;
+
+      &:hover {
+        background-color: $neu-confirm-btn-bg;
+      }
+    }
+    &.neu-forgot-password-link {
+      background-color: transparent;
+      color: $blue;
+      border: none;
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+    &.neu-link-button , &.neu-cancel-button{
+      background-color: transparent;
+      color: $blue;
+      border: none;
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+ 
+
+
+    &.neu-btn-sm {
+      font-size:0.875rem;
+      padding: 3px 10px;
+    }
+
+    &.neu-btn-md {
+      font-size: 1rem;
+      padding: 5px 15px;
+    }
+
+    &.neu-btn-lg {
+      font-size: 1.25rem;
+      padding: 8px 15px;
+    }
+  }
+
+}
+
+.neu-btn-cont {
+  position: relative;
+  height: auto;
+  & .neu-btn-cont-right {
+     float:right;
+  }
+
+  & .neu-btn-cont-left {
+   float: left;
+  }
+}
+
+.neu-table {
+  th {
+    font-size: 0.9rem;
+    background: $light-gray;
+  }
+  td{
+    padding: 0.2rem 0.75rem;
+    vertical-align: middle;
+    font-size: 0.85rem;
+  }
+  .neu-select-col-width{
+    width: 60px;
+  }
+}
+
+.neu-delete-icon {
+  color:$neu-red-icon;
+  cursor:pointer;
+}
+
+.neu-action-icon {
+  color: $neu-green-icon;
+  cursor:pointer;
+}
+
+.neu-green-icon {
+  color:$green;
+}
+
+.neu-red-icon {
+  color: $neu-red-icon;
+}
+
+.neu-forgot-password-link {
+  background-color: transparent;
+  color: $blue;
+  border: none;
+  font-size: 1rem;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+.nue-icon-style{
+  padding: 5px;
+  cursor: pointer;
+}
+.neu-edit-icon, .neu-view-icon{
+  @extend .nue-icon-style;
+  color: $neu-green;
+}
+.neu-delete-icon {
+  @extend .nue-icon-style;
+  color:  $neu-red-icon;
+}

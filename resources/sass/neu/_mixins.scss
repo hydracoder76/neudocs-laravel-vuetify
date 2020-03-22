@@ -1,0 +1,11 @@
+@mixin make-modal-shadow($shadow-color, $shadow-opacity) {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $shadow-color;
+  opacity: $shadow-opacity;
+}

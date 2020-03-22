@@ -1,0 +1,133 @@
+.neu-input {
+  @extend .form-control;
+  &[type=text],
+  &[type=password],
+  &[type=date],
+  &[type=email],
+  &[type=number] {
+    &:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    
+      display: inline-block;
+      padding: 5px;
+      height: 36px;
+      font-size: 1rem;
+      border-bottom-width: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      width: 100%;
+      border: 1px solid $nue-light-gray;
+      background-color: $neu-white;
+  
+    &.neu-input-sm {
+      width: 25%;
+      height: $neu-input-text-size + 10px;
+    }
+
+    &.neu-input-md {
+      width: 50%;
+      height: $neu-input-text-size + 15px;
+    }
+
+    &.neu-input-lg {
+      width: 100%;
+      height: $neu-input-text-size + 21px;
+    }
+
+    &.neu-input-single {
+      @extend .neu-input-sm;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      margin: 4px;
+
+    }
+  }
+
+  &[type=select] {
+
+  }
+
+}
+
+
+
+#neu-mfa-qr-setup {
+
+  p, label {
+    font-size: $neu-help-text-size !important;
+  }
+
+  ol {
+    font-size: $neu-help-text-size;
+  }
+
+  blockquote {
+    @extend .neu-footnote;
+    font-size: 0.8rem;
+  }
+
+}
+
+#neu-mfa-setup-verify-form {
+  @extend #neu-mfa-qr-setup;
+}
+
+.neu-login-form {
+  width: 100%;
+}
+.neu-input-error
+{
+  font-size: 18px;
+  color: $red;
+  text-align: center;
+}
+.neu-input-label {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.hints {
+  padding: 0.5em;
+  margin: 1em 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.hints-title{
+  font-style: italic;
+  font-size: 1rem;
+  color: $blue;
+}
+.matches {
+  font-size: 12px;
+  color:$red;
+}
+.vdp-datepicker{
+  input {
+    @extend .neu-input;
+  }
+  .vdp-datepicker__calendar {
+    width: 100%;
+    .cell {
+      &:hover {
+        border: 1px solid $blue;
+      }
+     
+      &.selected {
+        background:$blue;
+        color:$neu-white;
+    }
+    }
+  }
+  .vdp-datepicker__calendar-button{
+    right: 0;
+    padding: 5px 10px;
+    position: absolute;
+  }
+}
