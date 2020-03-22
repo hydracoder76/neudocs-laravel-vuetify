@@ -1,0 +1,82 @@
+
+// Body
+$body-bg: #f8fafc;
+$body-text: #4a4a4a; // dark gray 
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$neu-help-text-size: 0.9rem;
+
+// Colors
+$blue: #4a90e2;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #d0021b;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #409b4b;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$light-gray: rgba(74, 143, 226, 0.07);
+
+
+
+// NeuoneSRM custom colors
+$neu-white: #ffffff;
+$neu-confirm-btn-bg: $blue;
+$neu-confirm-btn-color: $neu-white;
+$neu-confirm-btn-hover-bg: $blue;
+$neu-confirm-btn-hover-color: lighten($neu-confirm-btn-color, 15%);//it's white now so it isn't
+// noticeable, this is here in case it changes from white
+
+
+$neu-error-btn-bg: $red;
+$neu-error-btn-color: $neu-white;
+$neu-error-btn-hover-bg: lighten($neu-error-btn-bg, 15%);
+$neu-error-btn-hover-color: lighten($neu-error-btn-color, 15%);
+
+$neu-action-btn-bg: #4e4165;
+$neu-action-btn-color: $neu-white;
+$neu-action-btn-hover-bg: lighten($neu-action-btn-bg, 15%);
+$neu-action-btn-hover-color: lighten($neu-action-btn-color, 15%);
+
+$neu-header-bg-color: $blue;
+$neu-header-color: #ffffff;
+$neu-header-link-color: #eaf8f8;
+$neu-heading-color: #5b5b5b;
+$neu-heading-link-color: #fff7ff;
+
+$neu-body-bg-color: #fffff5;
+$neu-body-color: $body-text;
+$neu-body-font-size: 1rem;    // 16px 
+$neu-body-link-color:$blue;
+
+$neu-footer-bg-color: $neu-white;
+$neu-footer-color: $body-text;
+$neu-footer-font-size: $neu-body-font-size;
+$neu-footer-link-color: #ffffff;
+$neu-footer-height:60px;
+
+
+$neu-placeholder-size: 25px;
+$neu-input-text-size: 25px;
+
+$neu-grey-text: #767676;
+$neu-black-text: #000000;
+$neu-white-text: #ffffff;
+$nue-light-gray: #ccc;
+$neu-red-text: $red;
+
+$neu-red-icon: $red;
+$neu-green-icon: #2dc21d;
+$neu-green: $green;
+
+// header
+$neu-header-height: 70px;
+//end header
+
+
+

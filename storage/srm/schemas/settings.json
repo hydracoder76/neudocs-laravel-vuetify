@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Settings",
+  "description": "A request for modifying settings",
+  "type": "array",
+  "properties": {
+	"settings":{
+	  "description": "A list of settings to be sent",
+	  "type": "array",
+	  "properties":{
+		"priority_green":{
+		  "description":"Priority for green",
+		  "type": "array",
+		  "properties":{
+			"value":{
+			  "description":"value for property",
+			  "type":"string"
+			}
+		  },
+		  "required":["value"]
+		},
+		"priority_red":{
+		  "description":"Priority for red",
+		  "type": "array",
+		  "properties":{
+			"value":{
+			  "description":"value for property",
+			  "type":"string"
+			}
+		  },
+		  "required":["value"]
+		}
+	  }
+	},
+	"required":["priority_green", "priority_red"]
+  },
+  "required": ["settings"]
+}

@@ -1,0 +1,44 @@
+
+.v-sidebar-menu {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: $neu-white;
+
+  .vsm-list {
+    width: 100%;
+    .vsm-item {
+      border-bottom: 1px solid $nue-light-gray;
+      cursor: pointer;
+      &.active-item{
+        .vsm-link, .vsm-icon{
+          color: $neu-header-bg-color !important;
+        }
+      }
+      .vsm-link {
+        color: $body-text;
+        .vsm-icon {
+          background: inherit;
+          border-radius: 0;
+          color: $body-text;
+        }
+        &:hover {
+          color: $neu-header-bg-color;
+          background-color: inherit;
+          .vsm-icon {
+            color: $neu-header-bg-color;
+            background-color: inherit;
+          }
+        }
+
+      }
+
+    }
+
+  }
+}
+
+

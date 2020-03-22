@@ -1,0 +1,24 @@
+If Neubus fulfills a request, in part or in full, without uploading via SRM 
+directly into that request, then this text file 
+(Fulfillment_Placeholder_File.txt) is added in lieu of an uploaded file.
+
+Neubus may do this for a number of reasons, including but not limited to:
+  - The source material for one or more parts in the request was not in 
+    Neubus's custody.
+  - Neubus fulfilled the request by some other means, such as uploading 
+    directly into neuDocs Enterprise.
+  - The request included a part that had previously been requested and 
+    fulfilled.
+
+If this text file appears by itself in the ZIP file downloaded in association 
+with a request, then users can conclude every part in the request has been done 
+this way.
+
+If this file appears alongside other files in the ZIP file downloaded in 
+association with a request, then users can conclude that there is at least one 
+part in the request which has been fulfilled this way, while Neubus has also 
+uploaded via SRM into at least one part in the request. (In the case of Neubus 
+fulfilling a request that includes a part which had previously been requested 
+and fulfilled before, these parts could be the same part.)
+
+Please submit an RT ticket or contact support@neubus.com if you have questions.

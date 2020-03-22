@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Indexes",
+  "description": "A request for sending in indexes",
+  "type": "array",
+  "patternProperties":{
+	"^.*$":{
+	  "anyOf":[
+		{"type":"string"}
+	  ]
+	}
+  },
+  "additionalProperties":false
+}

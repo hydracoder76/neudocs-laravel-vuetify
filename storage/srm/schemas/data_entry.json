@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Data Entry",
+  "description": "Data entry to the SRM system. Passed as a parameter fo a formdata object",
+  "type": "array",
+  "properties": {
+	"box_name": {
+	  "description": "The name of the box",
+	  "type": "string"
+	},
+	"box_status": {
+	  "type": "string",
+	  "description": "Used to determine what data entry box status",
+	  "enum": ["NEW", "DATA_ENTRY", "CLOSED"]
+	},
+
+	"box_location_code": {
+	  "type": "string",
+	  "description": "Box location code"
+	},
+	"part_name": {
+	  "type": "string"
+	},
+	"part_id": {
+	  "type": "string",
+	  "minLength": 36,
+	  "maxLength": 60
+	},
+	"box_id": {
+	  "type": "integer"
+	},
+	"part_index_value": {
+	  "type": "string"
+	},
+	"index_type_id": {
+	  "type": "integer"
+	},
+	"index_location_code": {
+	  "type": "string"
+	},
+	"project_id": {
+	  "type": "string"
+	},
+	"rfid": {
+	  "type": "string"
+	}
+  },
+  "required": ["box_id","part_id"]
+}

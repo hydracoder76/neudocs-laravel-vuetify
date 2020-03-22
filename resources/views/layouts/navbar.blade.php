@@ -1,0 +1,1 @@
+<nav-bar :options='@json($adminChildren)'></nav-bar>

@@ -1,0 +1,60 @@
+.neu-modal-form {
+  .custom-file, .custom-file-control, .custom-file-input {
+    margin-top: 5px;
+    width: 100% !important;
+    display: block;
+    height: 250px;
+  }
+
+  .custom-file:focus {
+    .custom-file-control {
+      &::before {
+        background-color: #E60000 !important;
+      }
+    }
+  }
+
+  .custom-file-control {
+    position: absolute;
+
+    &::before {
+      bottom: 5px;
+      left: 30%;
+      right: 30%;
+      top: 200px;
+      padding-left: 10%;
+      color: white;
+      background-color: #595959;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+
+    }
+
+
+    &::after {
+      color: #595959;
+      font-size: 2rem;
+      left: 28%;
+      right: 25%;
+      top: 100px;
+      position: absolute;
+    }
+  }
+
+
+}
+
+.modal-footer {
+  display: block !important;
+}
+
+.col-form-label {
+  color: $body-text;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input::-ms-clear{
+  display: none;
+}
